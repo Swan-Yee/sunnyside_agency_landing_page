@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+$primary: #ffffff;
+
+$font-family-sans-serif: Barlow;
+$font-weight-normal: 500;
+$font-weight-bold: 700;
+$font-weight-bolder: 900;
+
+$btn-border-radius: 20px;
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+h1,h2,h3,h4,h5,a{
+    font-family: 'Fraunces',serif;
+}
+
+.mobile-hide{
+    display: block;
+}
+
+.mobile-show{
+    display: none;
+}
+
+.nav-link{
+    margin-right: 20px;
+}
+
+.navbar-brand{
+    font-size: 30px;
+}
+
+.bg-white .navbar-brand{
+    color: #3ebfff;
+}
+
+.bg-white .nav-link {
+    color: hsl(167, 40%, 24%);
+}
+
+.bg-white .btn__contact{
+    background-color: #3ebfff;
+    color: white;
+}
+
+.main-container{
+    padding-top: 100px;
+}
+
+.down-arrow{
+    width: auto; 
+    height: 100px
+}
+
+.nav-link{
+    font-family: Barlow;
+}
+
+.btn__contact{
+    padding: 10px 30px;
+}
+
+.home-page{
+    background-image: url('../../images/desktop/image-header.jpg');
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+.main-text{
+    font-size: 50px;
+}
+
+.btn__close{
+    display: none;
+    color: white;
+}
+
+.s1__title{
+    font-size: 50px;
+}
+
+.s_4-text{
+    padding: 400px 150px 10px 150px;
+}
+
+.text__learn-more{
+    text-decoration: none;
+    border-bottom: 4px solid hsl(51, 100%, 49%);
+    transition: .3s;
+}
+
+.text__learn-more:hover {
+    border-bottom: 8px solid hsl(51, 100%, 49%);
+}
+
+.profile-container{
+    display: grid;
+    gap: 50px;
+}
+
+.client__profile{
+    width: 80px;
+}
+
+.footer-container{
+    background-color: hsl(210, 4%, 67%);
+    padding: 80px 0 30px 0;
+}
+
+.footer-head{
+    margin-bottom: 30px;
+}
+
+.footer-head h3{
+    color: hsl(213, 9%, 39%);
+    margin-bottom: 20px;
+}
+
+.footer-des span{
+    margin-right: 0 30px;
+}
+
+.social-icon{
+    margin-right: 0 30px;
+}
+
+.design-container-1{
+    background-image: url('../../images/desktop/image-graphic-design.jpg');
+    background-repeat: no-repeat;
+}
+
+.design-container-2{
+    background-image: url('../../images/desktop/image-photography.jpg');
+    background-repeat: no-repeat;
+}
+
+@media(max-width: 785px) {
+    // .nav__list{
+    //     display: none;
+    // }
+
+    .btn__close{
+        display: block;
+        cursor: pointer;
+    }
+
+    .main-container{
+        padding-top: 100px;
+    }
+
+    .home-page {
+        background-image: url('../../images/desktop/image-header.jpg');
+        background-position-x: center;
+    }
+
+    .main-text{
+        font-size: 45px;
+    }
+
+    .down-arrow{
+        width: auto; 
+        height: 100px
+    }
+    
+    .nav__list{
+        display: none;
+        background-color: white;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav__show{
+        display: block;
+    }
+
+    .nav-link{
+        color: hsl(167, 40%, 24%);
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .bg-white .btn__close{
+        color:#3ebfff;
+    }
+
+    .btn__contact{
+        background-color: #3ebfff;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav{
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px){
+    .home-page {
+        background-image: url('../../images/mobile/image-header.jpg');
+        background-position-y: bottom;
+    }
+
+    .mobile-hide{
+        display: none;
+    }
+
+    .mobile-show{
+        display: block;
+    }
+
+    .home-page {
+        background-image: url('../../images/mobile/image-header.jpg');
+        background-size: cover;
+    }
+
+    .s_4-text{
+        padding: 400px 20px 89px 20px;
+    }
+
+    .design-container-1 {
+        background-image: url('../../images/mobile/image-graphic-design.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .design-container-2 {
+        background-image: url('../../images/mobile/image-photography.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .profile-container{
+        display: grid;
+        gap: 30px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .profile-container .text-center{
+        width: 75%;
+        margin: 0 auto;
+    }
+}

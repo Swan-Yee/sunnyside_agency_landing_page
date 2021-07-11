@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- navbar -->
+<header class="">
+  <nav class="navbar navbar-expand-lg bg-transparent fixed-top" id="scroll-header">
+  <div class="container-fluid mx-lg-5 mx-sm-none">
+    <div class="w-100 d-flex justify-content-between align-items-center">
+          <a class="navbar-brand" href="#">sunnyside</a>
+          <ion-icon name="grid-outline" class="btn__close" id="btn__close"></ion-icon>
+    </div>
+    <div class="nav__list" id="nav__list">
+      <ul class="navbar-nav ms-auto mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#service">Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#project">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-primary nav-btn-contact text-uppercase btn__contact" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<section class="main">
+<!-- ====================================== Main-page ================================================ -->
+  <section class="home-page vh-100" id="home">
+    <div class="container home-container position-relative">
+      <div class="row text-center justify-content-center main-container">
+        <h1 class="text-white text-uppercase text-center main-text">We are creatives</h1>
+        <img src="images/icon-arrow-down.svg" alt="" srcset="" class="mt-3 down-arrow">
+      </div>
+    </div>
+  </section>
+
+  <section class="section-2">
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center py-5">
+              <div class="w-75 text__part">
+                  <h3 class="s1__title">Transform your band</h3>
+                  <p class="my-5 text-muted">We are a full-service creative agency specializing in helping brands grow fast. 
+  Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                    <a href="" class="text-uppercase text-dark text__learn-more">Learn More</a>
+              </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+             <img src="images/desktop/image-transform.jpg" alt="" srcset="" class="img-fluid vh-100 mobile-hide">
+             <img src="images/mobile/image-transform.jpg" alt="" srcset="" class="img-fluid vh-100 mobile-show">
+          </div>
+        </div>
+    </div>
+  </section>
+
+    <section class="section-3">
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+             <img src="images/desktop/image-stand-out.jpg" alt="" srcset="" class="img-fluid vh-100 mobile-hide">
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center py-5">
+                <div class="w-75 text__part">
+                  <h3 class="s1__title">Stand out to the right audience</h3>
+                  <p class="my-5 text-muted">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+                    <a href="" class="text-uppercase text-dark text__learn-more">Learn More</a>
+              </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+             <img src="images/mobile/image-stand-out.jpg" alt="" srcset="" class="img-fluid vh-100 mobile-show">
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="section-4">
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+            <div class="design-container-1">
+                <div class="text-center position-relative h-100 s_4-text">
+                    <h3>
+                      Graphic design
+                    </h3>
+                    <p class="text-muted mt-5">
+                        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+                    </p>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+             <div class="design-container-2">
+                  <div class="text-center h-100 s_4-text position-relative">
+                    <h3>
+                        Photography
+                    </h3>
+                    <p class="text-muted mt-5">
+                        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+                    </p>
+                </div>
+             </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+  <section class="client" id="client">
+      <div class="container">
+          <div class="row justify-content-center align-items-center py-5">
+            <div class="col-12">
+                <h3 class="text-muted text-uppercase text-center text-muted mb-5">
+                    Client testimonials
+                </h3>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <div class="profile-container">
+                <img src="images/image-emily.jpg" alt="" srcset="" class="rounded-circle client__profile d-block mx-auto">
+                  <p class="text-center">
+                    We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+                  </p>
+                  <div class="text-center"> 
+                      <h5>
+                        Emily R.
+                      </h5>
+                      <p class="text-muted">
+                        Marketing Director
+                      </p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <div class="profile-container">
+                <img src="images/image-jennie.jpg" alt="" srcset="" class="rounded-circle client__profile d-block mx-auto">
+                  <p class="text-center">
+                    Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+                  </p>
+                  <div class="text-center">
+                      <h5>
+                        Thomas S.
+                      </h5>
+                      <p class="text-muted">
+                          Chief Operating Officer  
+                      </p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <div class="profile-container">
+                <img src="images/image-thomas.jpg" alt="" srcset="" class="rounded-circle client__profile d-block mx-auto">
+                  <p class="text-center">
+                    Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+                  </p>
+                  <div class="text-center">
+                    <h5>
+                      Jennie F.
+                    </h5>
+                    <p class="text-muted">
+                        Business Owner
+                    </p>  
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="photos-section">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-sm-12 p-0">
+              <img src="images/desktop/image-gallery-milkbottles.jpg" alt="" srcset="" class="img-fluid mobile-hide">
+              <img src="images/mobile/image-gallery-milkbottles.jpg" alt="" srcset="" class="img-fluid mobile-show w-100">
+            </div>
+            <div class="col-lg-3 col-sm-12 p-0">
+              <img src="images/desktop/image-gallery-cone.jpg" alt="" srcset="" class="img-fluid mobile-hide">
+              <img src="images/mobile/image-gallery-cone.jpg" alt="" srcset="" class="img-fluid mobile-show w-100">
+            </div>
+            <div class="col-lg-3 col-sm-12 p-0">
+              <img src="images/desktop/image-gallery-orange.jpg" alt="" srcset="" class="img-fluid mobile-hide">
+              <img src="images/mobile/image-gallery-orange.jpg" alt="" srcset="" class="img-fluid mobile-show w-100">
+            </div>
+            <div class="col-lg-3 col-sm-12 p-0">
+              <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="" srcset="" class="img-fluid mobile-hide">
+              <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="" srcset="" class="img-fluid mobile-show w-100">
+            </div>
+        </div>
+      </div>
+  </section>
+</section>
+
+<section id="footer">
+    <div class="container-fluid footer-container">
+        <div class="text-center">
+          <div class="footer-head">
+              <h3>sunnyside</h3>
+              <div class="footer-des text-muted">
+                <span>About</span>
+                <span>Services</span>
+                <span>Projects</span>
+              </div>
+          </div>
+          <div class="footer-social mb-5"> 
+            <img src="images/icon-facebook.svg" alt="" srcset="" class="social-icon">
+            <img src="images/icon-instagram.svg" alt="" srcset="" class="social-icon">
+            <img src="images/icon-pinterest.svg" alt="" srcset="" class="social-icon">
+            <img src="images/icon-twitter.svg" alt="" srcset="" class="social-icon">
+          </div>
+          <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="#">Swan Yee Tun</a>.
+          </div>
+        </div>
+    </div>
+</section>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
